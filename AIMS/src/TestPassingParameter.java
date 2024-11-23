@@ -8,8 +8,8 @@ public class TestPassingParameter {
 		System.out.println("jungle dvd title: "+jungleDVD.getTitle());
 		System.out.println("cinderella dvd title: "+cinderellaDVD.getTitle());
 		tswap(jungleDVD, cinderellaDVD);
-		System.out.println("njungle dvd title: "+jungleDVD.getTitle());
-		System.out.println("ncinderella dvd title: "+cinderellaDVD.getTitle());
+		System.out.println("new jungle dvd title: "+jungleDVD.getTitle());
+		System.out.println("new cinderella dvd title: "+cinderellaDVD.getTitle());
 		changeTitle(jungleDVD, cinderellaDVD.getTitle());
 		System.out.println("jungle dvd title: "+jungleDVD.getTitle());
 	}
