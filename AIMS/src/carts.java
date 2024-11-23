@@ -15,6 +15,23 @@ public class carts {
 	    		System.out.println("The cart is full.");
 	    		 }
 	    } 
+	    public void addDVD(DVD [] dvdList) {
+	    	
+	    	  if (dvdList.length > MAX_NUMBERS_ORDERED) {
+	              System.out.println("The cart is almost full!");
+	          } else {
+	              for (int i = 0; i < dvdList.length; i++) {
+	                  itemsOrdered[qtyOrdered] = dvdList[i];
+	                  System.out.println(dvdList[i].getTitle() + " has been added!");
+	                  qtyOrdered +=1 ;
+	              }
+	      
+	          }
+	    }
+	    public void addDVD(DVD dvd1, DVD dvd2) {
+	    	DVD [] dvdList = {dvd1,dvd2};
+	    	addDVD(dvdList);
+	    }
 	    public void removeDVD(DVD disc) {
 	    	for(int i=0;i< qtyOrdered;i++) {
 	    		if(itemsOrdered[i] ==disc) {
