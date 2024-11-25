@@ -62,5 +62,9 @@ public class DVD {
 	public String toString() {
 			return this.id + ". DVD - " + this.title + " - " + this.category +" - " + this.director +" - "+ this.length +" - " + this.cost + "$";
 	}
+	 
+	public boolean isMatch(String ktitle) {
+		return this.title.toLowerCase().contains(ktitle.toLowerCase());
+	}
 	
 }
