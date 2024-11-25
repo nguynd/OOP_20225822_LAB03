@@ -13,5 +13,8 @@ public class CartTest {
 		cart.addDVD(dvd3);
 		
 		cart.print();
+		cart.searchTitle("lion");
+		cart.searchID(4);
+		cart.searchID(2);
 	}
 }
