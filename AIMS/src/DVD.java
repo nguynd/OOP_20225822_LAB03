@@ -58,6 +58,9 @@ public class DVD {
 	public int getId() {
 		return id;
 	}
-	
+	 @Override
+	public String toString() {
+			return this.id + ". DVD - " + this.title + " - " + this.category +" - " + this.director +" - "+ this.length +" - " + this.cost + "$";
+	}
 	
 }
