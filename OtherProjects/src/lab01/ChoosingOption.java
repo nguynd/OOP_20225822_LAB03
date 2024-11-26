@@ -1,4 +1,6 @@
-package ex1;
+
+package lab01;
+
 
 	import javax.swing.JOptionPane;
 
